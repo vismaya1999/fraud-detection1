@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" type="text/css" href="/static/styl/style.css">
+</head>
+<body class="reg">
+<div>
+    <form>
+        {% csrf_token %}
+        <table class="tb_colo" >
+            <caption class="reggg">REGISTRATION</caption>
+            <tr>
+                <th>
+                    <table>Name</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="name" placeholder="NAME" id="name">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>Password</table>
+                </th>
+                <td>
+                    <input type="password" class="d" name="pass" placeholder="PASSWORD" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>Email</table>
+                </th>
+                <td>
+                    <input type="email" class="d" name="email" placeholder="EMAIL" id="email">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <table>Age</table>
+                </th>
+                <td>
+                    <input type="number" class="d" name="age" placeholder="AGE" id="age">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Gender</label>
+                </th>
+                <td>
+                    <input type="radio" name="gend" value="male"><label>Male</label><input type="radio" name="gend"
+                                                                                           value="female"><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>Date Of Birth</table>
+                </th>
+                <td>
+                    <input type="date" class="d" name="dateofbir" placeholder="Date Of Birth" id="dateofbir">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>State</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="state" placeholder="STATE" id="state">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>Country</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="country" placeholder="COUNTRY" id="country">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>cardnumber</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="cardno" placeholder="cardnumber" id="cardno">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>Expiry month</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="exp_month" placeholder="expiry month" id="expmon">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>Expiry year</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="exp_year" placeholder="Expiry Year" id="expyr">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <table>CVV</table>
+                </th>
+                <td>
+                    <input type="text" class="d" name="cvv" placeholder="CVV" id="cvv">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button name="stud_reg_submit" id="su" type="submit" formmethod="post"
+                            formaction="/register/" >SUBMIT
+                    </button>
+                </th>
+            </tr>
+
+        </table>
+    </form>
+</div>
+</body>
+</html>

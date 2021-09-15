@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOG IN</title>
+    <link rel="stylesheet" type="text/css" href="/static/styl/style.css">
+</head>
+<body class="std_back">
+<div>
+    <form>
+        {% csrf_token %}
+        <table class="stud_login_table">
+
+            <tr>
+                <th><label class="k">USERNAME</label></th>
+                <th><input id="uss" type="text" placeholder="USERNAME" name="user_nam"></th>
+            </tr>
+
+            <tr>
+                <th><label class="k">PASSWORD</label></th>
+                <th><input id="pss" type="password" placeholder="PASSWORD" name="user_pass"></th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="bb" type="submit" name="stud_login_btn" formmethod="post"
+                            formaction="/login/">LOG IN
+                    </button>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><a href="/user_registration/" id="bbb">Registration</a></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
